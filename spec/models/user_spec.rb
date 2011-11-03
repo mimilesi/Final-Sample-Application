@@ -122,6 +122,24 @@ describe User do
         @user.password_matches?("invalid").should be_false
       end
     end
+    
+    describe "authenticate password" do
+      
+      it "should return nil on email/password mismatch" do
+        wrong_password_user = User.authenticate(@attr[:email], "wrongpassword")
+        wrong_password_user.should be_nil
+      end
+      
+      it "should return nil for an email address with no user" do
+        missing_user = User.authenticate("bar@foo.com", @attr[:password])
+        missing_user.should be_nil
+      end
+      
+      it "should return the user on email/password match" do
+        matching_user = User.authenticate(@attr[:email], @attr[:password])
+        matching_user.should == @user
+      end
+    end
   end
 
 end
