@@ -132,7 +132,7 @@ DEPENDENCIES
   gravatar_image_tag (= 1.0.0.pre2)
   heroku
   rails (= 3.0.9)
-  rspec-rails (= 2.6.1)
+  rspec-rails
   spork
   sqlite3 (= 1.3.3)
   webrat (= 0.7.1)

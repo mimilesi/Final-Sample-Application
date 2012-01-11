@@ -7,16 +7,15 @@ gem 'will_paginate', '3.0.pre2'
 
 gem 'spork'
 gem 'heroku'
-#gem 'thin'
 
 group :development do
-  gem 'rspec-rails', '2.6.1'
+  gem 'rspec-rails'
   gem 'annotate', '2.4.0'
   gem 'faker', '0.3.1'
 end
 
 group :test do
-  gem 'rspec-rails', '2.6.1'
+  gem 'rspec-rails'
   gem 'webrat', '0.7.1'
   gem 'autotest', '4.4.6'
   gem 'autotest-rails-pure', '4.1.2'
