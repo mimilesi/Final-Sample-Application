@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #eee;
+  background: #cff;
 }
 
 header {
@@ -41,6 +41,7 @@ a:hover {
 a:visited {
   color: #069;
 }
+
 
 /* Navigation */
 
@@ -90,7 +91,7 @@ a.signup_button {
   background: #006400;
   font-size: 150%;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Round corners */
@@ -101,8 +102,7 @@ a.signup_button {
   border-radius:         10px;
 }
 
-/* Footer */
-
+/* Footer Design */
 footer {
   text-align: center;
   margin-top: 10px;
@@ -115,14 +115,29 @@ footer nav {
   float: none;
 }
 
-/* User profile page */
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
 
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
-
-/* Sign Up form */
 
 div.field, div.actions {
   margin-bottom: 10px;
@@ -168,19 +183,7 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
-
-/* Users index */
-
-ul.users {
-  margin-top: 1em;
-}
-
-.users li {
-  list-style: none;
-}
-
-
-/* Microposts */
+public/stylesheets/custom.css
 
 h1.micropost {
   margin-bottom: 0.3em;
